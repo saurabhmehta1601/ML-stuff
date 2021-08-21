@@ -33,6 +33,15 @@ blank = np.zeros((500,500 ,3), dtype='uint8')
 # cv.circle(blank,(250,250),50,(0,0,255),thickness=3)
 # cv.imshow('Circle',blank)
 
+# # Drawing a rectangle outline on screen
+# cv.line(blank, (50,50), (250,350), (200,140,67),thickness=2)
+# cv.imshow("Line ", blank)
+
+# Write text on image
+
+cv.putText(blank, "Saurabh", (100,100), cv.FONT_HERSHEY_TRIPLEX, 1.0 ,(123,66,253), 2)
+cv.imshow("Text", blank)
+
 
 
 
